@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Dagdrommer's website and Linux Blog
-email: your-email@example.com
+email: kai.boedeker[at]tum.de
 description: >- # this means to ignore newlines until "baseurl:"
   My personal website and Linux-Blog (!UNDER CONSTRUCTION!). In the future, you find here tips and tricks when running Linux and my research as a forestry scientist.
 baseurl: "" # the subpath of your site, e.g. /blog
