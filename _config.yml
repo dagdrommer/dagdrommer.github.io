@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 # examples https://github.com/dgrtwo/dgrtwo.github.com
@@ -19,15 +19,41 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "Dagdrommer's website and Linux Blog"
-email: "kai.boedeker[at]tum.de"
-description: "My personal website and Linux-Blog (!UNDER CONSTRUCTION!). In the future, you find here tips and tricks when running Linux and my research as a forestry scientist."
+title: "Kai's website and Linux Blog"
+subtitle: #"(!UNDER CONSTRUCTION!). In the future, you find here tips and tricks when running Linux and things about my research as a forestry scientist."
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+#url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
-github_username:  dagdrommer
+#github_username:  dagdrommer
 
-# Build settings
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: rouge
+
+# Site Author
+author:
+  name             : "Kai Bödeker"
+  avatar           : "/images/32896626175_3fb4c2eebc.jpg"
+  bio              : "Forestry scientist and Linux enthusiast."
+  location         : "Germany"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "corylus.colurna+git@protonmail.com"
+    #- label: "Twitter"
+    #  icon: "fab fa-fw fa-twitter-square"
+    #  # url: "https://twitter.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/dagdrommer"
+    - label: "ORCID"
+      icon: "fab fa-orcid"
+      url: "https://orcid.org/0000-0002-5307-5108"
+
+
+# Build settingshttps://github.com/dgrtwo/dgrtwo.github.com
 #theme: minima
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "air"
@@ -36,6 +62,28 @@ plugins:
   - jekyll-include-cache
 
 search: true
+
+author_profile: true
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      #comments: true
+      #share: true
+      related: true
+
+
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

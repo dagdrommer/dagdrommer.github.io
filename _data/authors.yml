@@ -1,0 +1,19 @@
+# /_data/authors.yml
+
+# Kai Bödeker:
+#   name        : "Kai Bödeker"
+#   bio         : "Forestry scientist and Linux enthusiast."
+#   avatar      : "/images/bio-photo-2.jpg"
+#   links:
+#     - label: "Email"
+#       icon: "fas fa-fw fa-envelope-square"
+#       url: "mailto:kai.boedeker@tum.de"
+#     - label: "Website"
+#       icon: "fas fa-fw fa-link"
+#       url: "https://thewhip.com"
+#     - label: "GitHub"
+#       icon: "fab fa-fw fa-github-square"
+#       url: "https://github.com/dagdrommer"
+    #  - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/extravagantman"
